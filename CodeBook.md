@@ -1,14 +1,14 @@
-##Code Book
+## Code Book
 
 Additional information about the variables, data and transformations used in the course project Getting and Cleaning Data course.
 
-##Source Data Description
+## Source Data Description
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-##Attribute Information:
+## Attribute Information:
 
 For each record in the dataset it is provided: 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
@@ -17,7 +17,7 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-##Code
+## Code
 
 * Source Files are downloaded, unzipped and features.txt, activity_labels.txt, subject_train.txt, x_train.txt, y_train.txt,subject_test.txt, x_test.txt, y_test.txt files are loaded using read.table.
 * Rbind is used to Merge the training and test dataset.
@@ -27,13 +27,13 @@ For each record in the dataset it is provided:
 * Used gsub function to appropriately label the data set with descriptive activity names.
 * A second, independent tidy data set with the average of each variable for each activity and each subject is created and output is stored in tidydata.txt file.
 
-##Identifiers
+## Identifiers
 
 * subject - The ID of the test subject
 * activity - The type of activity performed when the corresponding measurements were taken
 
 
-##Measurements
+## Measurements
  * timeBodyAccelerometerMeanX
  * timeBodyAccelerometerMeanY
  * timeBodyAccelerometerMeanZ
@@ -101,7 +101,7 @@ For each record in the dataset it is provided:
  * frequencyBodyGyroscopeJerkMagnitudeMean
  * frequencyBodyGyroscopeJerkMagnitudeStd
 
-##Activity Labels
+## Activity Labels
 
 * WALKING (value 1): subject was walking during the test
 * WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
