@@ -2,7 +2,7 @@
 
 This is the course project for the Getting and Cleaning Data Coursera course. The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set.
 
-###Summary
+## Summary
 
 The R script, run_analysis.R, does the following:
 
